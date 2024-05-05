@@ -16,7 +16,9 @@
     </div>
     <div class="grid-containermenumap">
       <div class="grid-item1menumap">
-      <input type="range" min="0" max="500" step="1" v-model="value"> {{value}} KM
+      <input type="range" min="0" max="500" step="1" v-model="value"> 
+      Disstance from city center of regional hub (Km)
+      {{value}} KM
       
      
       <div id="testcolor" @click="chanecolor('testcolor')"  class="grid-itemmenumap"><img class="sizeimgmenumap"  v-bind:src="imgmain">Parking for prople with disabilities</div>
@@ -61,7 +63,7 @@
 export default {
   data() {
     return {  
-      value: 50,
+      value: 250,
     imgmain: require("../assets/icon/S1-1.gif"),
     imgmain1: require("../assets/icon/S2-1.gif"),
     imgmain2: require("../assets/icon/S3-1.gif"),
@@ -174,10 +176,15 @@ document.getElementById(id).style.color = "white";
 <style>
 .grid-item1menumap {
   height: auto;
+  min-height: 300px;
   max-height: 300px;
   display: grid;
   grid-template-columns: 3;
   grid-template-rows: auto auto 15% 15% 15% 15% 15% ;
+  font-size: 0.55vw;
+  /* align-items: center; */
+  /* justify-content: center; */
+  /* display: flex; */
 }
 
 .grid-containermenumap {
@@ -189,7 +196,11 @@ document.getElementById(id).style.color = "white";
 }
 input[type="range"] {
   width:100%;
-  max-width: 200px;
+  /* max-width: 200px; */
+  /* align-items: center;
+  justify-content: center;
+  display: flex; */
+  
 }
 .sizeimgmenumap {
   float: left;
@@ -206,13 +217,14 @@ input[type="range"] {
   background-color: black;
 }
 .grid-itemmenumap {
-  background-color: rgba(255, 255, 255, 0.8);
+  /* background-color: (206, 11, 11, 0.8); */
   border: 1px solid rgba(0, 0, 0, 0.8);
   padding: 2%;
   width: 100%;
   min-width: 20px;
   font-size: 0.6vw;
   text-align: left;
+  /* height: 2000px; */
   /* display: inline-block;
   display: flex;
   position: relative;

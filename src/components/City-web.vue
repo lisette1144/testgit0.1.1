@@ -114,7 +114,7 @@ import Navtop from '@/components/Nav-home.vue';
 
 .navbarfixcityw{
   opacity: 0.9;
-  overflow: hidden;
+  /* overflow: hidden; */
   background-color: #333;
   position: fixed;
   top: 0;
@@ -163,7 +163,7 @@ body {
  
   width: 100%;
   /* min-width: 200px; */
-  padding-left: 4%;
+  /* padding-left: 4%; */
   height: auto;
 }
 #myImg {
@@ -325,7 +325,8 @@ margin-top: 0px;
   display: none;
 }
 .navbarcityw{
-display: none;}
+display: none;
+}
 /* .card {
   background-color: white;
   opacity: 0.7;

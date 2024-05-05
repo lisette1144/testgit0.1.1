@@ -23,40 +23,34 @@
         </div>
         <img src="../assets/img/C1.gif" usemap="#image-map" class="iconmapselectweb" />
 
-        <!-- <map name="image-map">
-          <area
-            target="_self"
-            alt="northern of thailand"
-            title="northern of thailand"
-            href="north.html"
-            coords="19,117,35,112,30,94,37,77,48,49,70,55,87,47,101,30,122,30,118,17,134,18,151,21,162,16,173,33,165,52,185,65,197,58,207,60,205,73,212,89,208,110,200,122,206,140,192,161,191,175,199,184,197,201,205,191,222,195,233,210,211,242,214,267,212,285,184,276,169,297,149,278,150,286,132,285,134,297,128,300,112,295,99,298,78,270,83,242,91,229,81,233,68,208,69,195,62,194,49,181,45,170,34,160,33,147,27,128,19,125"
-            shape="poly"
-          />
-          <area
-            target="_self"
-            alt="southern of thailand"
-            title="southern of thailand"
-            href="south.html"
-            coords="163,659,168,684,187,709,199,716,210,712,223,715,232,730,248,744,248,756,241,767,231,770,222,761,204,774,196,768,201,750,189,742,182,734,130,731,107,732,98,678,60,671,39,584,83,522,102,504,118,506,148,565"
-            shape="poly"
-          />
-          <area
-            target="_self"
-            alt="eastern of thailand"
-            title="eastern of thailand"
-            href="eastern.html"
-            coords="193,166,203,173,250,132,280,149,311,119,346,124,382,169,388,178,394,231,416,248,428,266,423,286,427,303,421,323,402,340,293,342,273,348,251,343,232,334,216,330,207,325,208,312,216,298,210,299,212,282,214,251,212,239,232,210,229,196,215,191,205,190,199,196,199,184,192,176"
-            shape="poly"
-          />
-          <area
-            target="_self"
-            alt="center of thailand"
-            title="center of thailand"
-            href="center.html"
-            coords="74,266,94,295,110,302,114,296,126,303,136,294,132,284,148,285,152,277,161,289,162,298,170,295,186,276,203,278,211,284,211,299,217,306,210,313,207,323,217,329,227,329,233,334,244,332,251,341,269,346,280,342,293,341,282,366,275,374,262,376,263,392,270,404,272,415,285,432,294,470,276,478,233,416,219,424,193,425,189,409,192,385,175,375,152,382,145,389,152,401,149,444,137,467,124,498,120,508,108,507,104,498,118,470,122,456,114,426,106,416,101,402,104,392,107,373,101,363,94,353,85,345,73,333,59,314,55,296"
-            shape="poly"
-          />
-        </map> -->
+        <map name="image-map">
+    <area target="" alt="Khanchanaburi" title="Khanchanaburi" href="" coords="50,100,44,92,39,84,29,77,23,71,9,51,4,41,1,29,4,22,14,15,20,16,19,-1,37,21,41,24,43,31,51,34,53,35,59,46,64,50,70,50,74,45,81,50,85,56,84,66,83,74,80,82,84,88,82,95,70,98" shape="poly">
+    <area target="" alt="Suphanburi" title="Suphanburi" href="" coords="67,50,56,41,61,33,69,36,75,37,83,38,89,40,96,39,101,40,102,46,101,59,105,65,104,71,100,78,86,83,82,78,85,68,86,59,86,52,78,46,73,43" shape="poly">
+    <area target="" alt="Chainat" title="Chainat" href="" coords="106,37,97,37,89,39,82,36,79,35,82,28,79,19,87,19,94,20,95,14,103,15,105,23,106,30" shape="poly">
+    <area target="" alt="Singburi" title="Singburi" href="" coords="104,44,103,38,108,37,107,26,112,30,115,36,114,42,116,48,110,47" shape="poly">
+    <area target="" alt="Angthong" title="Angthong" href="" coords="117,63,114,64,111,62,104,62,104,45,117,52" shape="poly">
+    <area target="" alt="Lopburi" title="Lopburi" href="" coords="116,39,115,30,120,22,129,13,137,11,147,12,155,16,155,26,162,34,163,41,159,47,147,42,141,44,139,48,134,42,128,47,123,51,117,46" shape="poly">
+    <area target="" alt="Saraburi" title="Saraburi" href="" coords="131,58,122,58,123,51,128,48,133,43,137,49,141,50,145,46,151,47,153,53,151,59,153,66,151,69,146,67,142,72,135,74,132,68" shape="poly">
+    <area target="" alt="Ayutthaya" title="Ayutthaya" href="" coords="119,53,117,60,114,65,106,62,105,67,106,74,110,79,115,79,122,78,133,74,129,59,120,58" shape="poly">
+    <area target="" alt="Pathumthani" title="Pathumthani" href="" coords="109,81,121,81,137,74,136,88,126,91,110,87" shape="poly">
+    <area target="" alt="Nakhonpathom" title="Nakhonpathom" href="" coords="104,103,93,101,89,98,89,91,82,84,88,84,96,81,103,78,105,84,105,92,107,98" shape="poly">
+    <area target="" alt="Nonthaburi" title="Nonthaburi" href="" coords="109,97,107,80,109,89,117,90,117,97" shape="poly">
+    <area target="" alt="Bangkok" title="Bangkok" href="" coords="108,101,115,98,120,91,136,90,136,98,134,101,127,101,126,104,117,105,115,114,112,112" shape="poly">
+    <area target="" alt="Samunpakan" title="Samunpakan" href="" coords="117,112,118,105,125,104,130,103,136,104,140,107,134,113" shape="poly">
+    <area target="" alt="Samunsakhon" title="Samunsakhon" href="" coords="97,115,94,112,97,106,106,103,110,111" shape="poly">
+    <area target="" alt="Samunsongkhram" title="Samunsongkhram" href="" coords="86,125,97,115,94,112,89,114" shape="poly">
+    <area target="" alt="Ratchaburi" title="Ratchaburi" href="" coords="83,120,76,122,71,127,59,127,50,127,49,102,71,99,82,97,86,91,89,101,93,106" shape="poly">
+    <area target="" alt="Phatchaburi" title="Phatchaburi" href="" coords="90,158,63,160,53,152,50,141,45,136,47,128,55,131,59,128,74,129,80,124,86,127,90,129,95,134,96,140" shape="poly">
+    <area target="" alt="Prachuapkhirikhan" title="Prachuapkhirikhan" href="" coords="62,162,89,160,92,178,88,186,82,200,75,213,71,231,67,238,59,241,50,240,58,228,67,207,72,203,71,193,69,183,62,181,61,171" shape="poly">
+    <area target="" alt="Chonburi" title="Chonburi" href="" coords="134,152,140,155,144,145,148,136,154,135,162,135,168,133,177,130,171,122,164,116,155,111,147,110,141,115,137,122,139,128,137,133,136,140" shape="poly">
+    <area target="" alt="Rayong" title="Rayong" href="" coords="143,154,146,142,153,138,163,136,172,133,177,138,182,142,182,150,167,156,173,156,159,157" shape="poly">
+    <area target="" alt="Chachoengsao" title="Chachoengsao" href="" coords="179,127,155,109,139,114,135,112,144,106,136,101,139,90,149,88,148,94,161,98,170,98,180,99,186,103,188,109,191,113,186,114,191,123" shape="poly">
+    <area target="" alt="Chanthaburi" title="Chanthaburi" href="" coords="181,152,183,140,178,132,185,127,191,123,196,130,201,126,206,128,209,125,212,136,216,144,216,150,210,161,205,171,200,166,188,159" shape="poly">
+    <area target="" alt="Trat" title="Trat" href="" coords="202,183,210,170,210,163,214,153,228,165,227,175,233,194,238,204,221,208" shape="poly">
+    <area target="" alt="Sakaew" title="Sakaew" href="" coords="207,123,206,110,219,107,220,100,227,98,234,84,237,79,223,79,217,82,205,80,195,79,189,85,186,90,186,97,188,104,190,113,193,119,196,128,200,124" shape="poly">
+    <area target="" alt="Phachinburi" title="Phachinburi" href="" coords="184,100,175,97,161,93,152,93,149,86,157,84,160,77,169,72,165,65,173,65,179,69,187,69,191,67,189,75,194,77,185,87" shape="poly">
+    <area target="" alt="Nakhonnayok" title="Nakhonnayok" href="" coords="146,86,138,87,139,75,145,70,150,70,156,63,163,67,164,71,155,83" shape="poly">
+</map>
       </div>
       <div class="item2">
         <div class="navmapcss">
@@ -114,6 +108,10 @@ export default {
     };
   },
   methods: {},
+  mounted(){
+  window.imageMapResize();
+
+  },
 };
 </script>
 <style>

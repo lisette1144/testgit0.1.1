@@ -53,7 +53,7 @@ src="https://www.youtube.com/embed/QhUfEQUIC50?si=j07LfHi86uOz0Y75">
 
 
 <div class="text">
-<h2>Wat Phra That Doi Suthep</h2>
+<h2>Wat Phumin</h2>
 
 <ul>
   <div class="iconfix">
@@ -65,17 +65,7 @@ src="https://www.youtube.com/embed/QhUfEQUIC50?si=j07LfHi86uOz0Y75">
 </div>  <div class="re" style="float: right;">review</div>
 </ul>
 <p>
-  Wat Phumin is a Buddhist temple located at the center of the city of Nan, 
-  in the northern region of Thailand. The temple was built in 1596 and had 
-  been through several restorations. The temple is an example of the 
-  traditional Lanna style of architecture, which was known for its distinctive 
-  style. The temple is home to a number of important religious artifacts 
-  and a number of murals that depict religious stories and life of people at that time. 
-  This includes the famous life-size mural painting, named ‘Pu Maan Ya Maan’, 
-  which means Burmese man and woman. It is an example of mural with Tai Lue art in Nan, 
-  which is considered as unique and different from paintings of other areas in the Northern 
-  region of Thailand. In addition to its cultural and historical significance, Wat Phumin is 
-  also a popular destination for photographers, due to its beautiful and photogenic setting.
+{{ description }}
 </p>
 </div>
 <RouterLink to="citynext">
@@ -153,6 +143,8 @@ export default {
   created(){
 axios.get('http://pm2.derive.co.th/tourism/api/touristSites/1').then((response) =>{
   console.log(response.data[0].imagesOfTouristSite);
+  console.log(response.data[0].description);
+  this.description=response.data[0].description;
    this.img=this.img.concat(response.data[0].imagesOfTouristSite[0].imagePath);
   // this.img1=this.img.concat(response.data[0].imageName);
   // this.img2=this.img.concat(response.data[0].imageName);

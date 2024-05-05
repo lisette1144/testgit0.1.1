@@ -5,25 +5,25 @@
       <h2 style="margin: 0px">CITY & CULTURE</h2>
       <p style="margin: 0px; margin-bottom: 2%">NORTHEASTERN REGION</p>
     </div>
-    <div class="item2sz" style="border-bottom: 5px solid gray">
-      <div id="testcolor" @click="chanecolor('testcolor')" class="grid-itemnav">
+    <div class="item2sz" style="border-bottom: 5px solid gray ; padding-bottom:20px;">
+      <div id="testcolor"  class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain" />Parking for prople with disabilities
       </div>
-      <div id="testcolor1" @click="chanecolor1('testcolor1')" class="grid-itemnav">
+      <div id="testcolor1"  class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain1" />Step - free access to the building / property / site (possbly via elevator / ramps)
       </div>
-      <div id="testcolor2" @click="chanecolor2('testcolor2')" class="grid-itemnav">
+      <div id="testcolor2"  class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain2" />All other rooms and facilities that van be used by the guest can be reached without steps or with a lift / ramp.
       </div>
-      <div id="testcolor3" @click="chanecolor3('testcolor3')" class="grid-itemnav">
+      <div id="testcolor3" class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain3" />Accessible Toilet by Wheelchair
       </div>
-      <div id="testcolor4" @click="chanecolor4('testcolor4')" class="grid-itemnav">
+      <div id="testcolor4"  class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain4" />Requested Assistance is possible (request in advance)
       </div>
-      <div id="testcolor5" @click="chanecolor5('testcolor5')" class="grid-itemnav">
+      <!-- <div id="testcolor5" @click="chanecolor5('testcolor5')" class="grid-itemnav">
         <img class="sizeimgnav" v-bind:src="imgmain5" />Request assistance is possible
-      </div>
+      </div> -->
     </div>
     <div class="item3sz">
       
@@ -198,6 +198,7 @@ word-wrap: break-word;
   padding: 2%;
   width: 100%;
   min-width: 20px;
+  /* min-height: 50px; */
   font-size: 0.6vw;
   text-align: left;
   text-align: left;
@@ -237,7 +238,7 @@ word-wrap: break-word;
 }
 .item2sz {
   display: grid;
-  grid-template-rows: 15% 15% 15% 15% 15% 15%;
+  grid-template-rows: 20% 20% 20% 20% 20% ;
   max-height: 500px;
   height: 100%;
 }

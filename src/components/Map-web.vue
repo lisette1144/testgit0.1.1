@@ -21,7 +21,7 @@
               <p style="margin: 0px; font-size:1vw;">CHOOSE BY LOCATION</p>
             </div></div>
         </div>
-        <img src="../assets/img/Map2.gif" usemap="#image-map" class="iconmapselectweb" />
+        <img src="../assets/img/Map2.gif" usemap="#image-map" class="iconmapselectweb" @load="onImageLoad" />
 
         <map name="image-map">
           <area
@@ -103,7 +103,12 @@
 </template>
 <script>
 import navbar from "@/components/Navbar-web.vue";
+
 export default {
+  mounted(){
+  window.imageMapResize();
+
+  },
   components: {
     navbar,
   },
@@ -111,9 +116,25 @@ export default {
     return {
       isOpen: false,
       active: "register",
+      areas: [
+        { shape: 'rect', coords: '10,10,110,110', href: 'http://example.com/1', alt: 'Area 1' },
+        { shape: 'circle', coords: '200,200,60', href: 'http://example.com/2', alt: 'Area 2' }
+      ]
     };
   },
-  methods: {},
+  methods: {
+    onImageLoad(event) {
+      console.log("SSSS");
+      const imageWidth = event.target.width;
+      const scale = imageWidth // event.target.naturalWidth;
+      this.areas.forEach(area => {
+        let scaledCoords = area.coords.split(',').map(coord => Math.round(coord * scale)).join(',');
+        area.coords = scaledCoords;
+      });
+    }
+  
+
+  },
 };
 </script>
 <style>
