@@ -63,11 +63,11 @@
             </div>
             <!-- <div id="google_translate_element"></div> -->
           </div>
-        <a href="/select"> 
           
+        
+          <router-link to="/select">
           <img class="icon1" src="../assets/icon/home1.png" />
-          <div class="ul2">HOME</div></a
-        >
+          <div class="ul2">HOME</div></router-link>
      
           
       </div>

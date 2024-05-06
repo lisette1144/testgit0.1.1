@@ -24,7 +24,7 @@
       <button @click="countersx()"
                         class="btn btn-info" 
                         style="background-color: #302c74; width: 30%; height: 50px;  border-radius: 8px ; border-color: #fff;
-                        color : #fff  "> <p style="margin: 0px; font-size:1vw;">CONFIRM</p>
+                        color : #fff  "> <p class="ffsize">CONFIRM</p>
                         </button>
                        
                         <div class="modal" v-if="isOpen">
@@ -38,14 +38,14 @@
                               <router-link to="/login"><button @click="isOpen= false"
                           class="btn btn-info" 
                           style="background-color: #17A2BB;  width: 100%; height: 50px;  border-radius: 25px;
-                           color : #fff "><p style="margin: 0px; font-size:2vw;">Log In / Sign Up</p>
+                           color : #fff "><p class="ffsize1">Log In / Sign Up</p>
                          </button></router-link>
                         </div>
                    <div class="itm1" >
                          <router-link to="/select">   <button 
                           class="btn btn-info" 
                           style="background-color: #17A2BB; width: 100%; height: 50px;   border-radius: 25px;
-                           color : #fff "><p style="margin: 0px; font-size:2vw;">Continue as a guest</p>
+                           color : #fff "><p class="ffsize1" >Continue as a guest</p>
                         </button> </router-link>
                          </div>
                      </div>
@@ -266,7 +266,15 @@ justify-content: center;
 // width: 50%;
 //  height: auto;
 // }
-
+.ffsize{
+  // font-size: 10vw;
+  margin: 0px; font-size:1vw;
+}
+.ffsize1{
+  // font-size: 10vw;
+  margin: 0px; 
+  font-size:2vw;
+}
 .hello1{
   max-width: 50%;
    height: 60%;
@@ -321,6 +329,46 @@ ul li {
   display: inline-block;
   margin: 0 5px;
   width: 25%;
+}
+.hello1 ul {
+    display: inline;
+    list-style-type: none;
+    padding: 0;
+    margin: 0px;
+}
+.hello1{
+  max-width: 90%;
+   height: 60%;
+   border-radius: 25px;
+  background-color: #2f3e5c;
+  padding: 0px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.hello12{
+  // display: flex;
+  // align-items: center;
+  // justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+   width: 90%;
+   height: 60%;
+   border-radius: 25px;
+  background-color: #2f3e5c;
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hello1 h3 {
+    font-size: 5vw;
+}
+.ffsize{
+  font-size: 5vw;
+}
+.ffsize1{
+  font-size: 4.5vw;
 }
 }
 </style>
