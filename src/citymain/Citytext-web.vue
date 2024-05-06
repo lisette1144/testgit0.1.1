@@ -6,7 +6,10 @@
 
 
       <div class="item2citytext">
-            <h2>{{ name }}</h2>
+            <h2>
+              <!-- {{ name }} -->
+              Wat Phumin
+            </h2>
 
 <ul>
   <div class="iconfixx">
@@ -18,7 +21,9 @@
 </div>  <div class="recitynext" style="float: right;">review</div>
 </ul>
 <p>
-{{description}}</p></div>
+<!-- {{description}} -->
+Wat Phumin is a Buddhist temple located at the center of the city of Nan, in the northern region of Thailand. The temple was built in 1596 and had been through several restorations. The temple is an example of the traditional Lanna style of architecture, which was known for its distinctive style. The temple is home to a number of important religious artifacts and a number of murals that depict religious stories and life of people at that time. This includes the famous life-size mural painting, named ‘Pu Maan Ya Maan’, which means Burmese man and woman. It is an example of mural with Tai Lue art in Nan, which is considered as unique and different from paintings of other areas in the Northern region of Thailand. In addition to its cultural and historical significance, Wat Phumin is also a popular destination for photographers, due to its beautiful and photogenic setting. 
+</p></div>
     
     
       
