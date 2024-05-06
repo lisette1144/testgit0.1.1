@@ -45,7 +45,8 @@ Wat Phumin is a Buddhist temple located at the center of the city of Nan, in the
     address:'11/22 เชียงราก 1 หอพัก city จังหวัด ปทุมธานี',
     model:'honda',
     numcar:'กข123',
-    img:'http://pm2.derive.co.th/tourism/'
+    img:require('../assets/img/1pm.jpg')
+    // img:'http://pm2.derive.co.th/tourism/'
 
     };
   },
@@ -53,9 +54,9 @@ Wat Phumin is a Buddhist temple located at the center of the city of Nan, in the
 axios.get('http://pm2.derive.co.th/tourism/api/touristSites/1').then((response) =>{
   console.log(response)
   console.log(response.data[0].engName);
-  this.name=response.data[0].engName;
-  this.description=response.data[0].description;
-  this.img=this.img.concat(response.data[0].imageName);
+  // this.name=response.data[0].engName;
+  // this.description=response.data[0].description;
+  // this.img=this.img.concat(response.data[0].imageName);
   // console.log(this.img);
 }  )
 // 
