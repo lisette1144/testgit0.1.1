@@ -4,10 +4,11 @@
 <div class="row">
 
   <div class="column" >
- <div class="video">
-<iframe @click="imgpopimgweb()" width="100%" height="70%"
+ <div class="video" >
+  <img @click="imgpopimgwebx('https://www.youtube.com/embed/QhUfEQUIC50?si=j07LfHi86uOz0Y75','video')" id="myImg" src="../assets/img/1pm.jpg" width="100%" >
+<!-- <iframe @click="imgpopimgwebx()" width="100%" height="70%"
 src="https://www.youtube.com/embed/QhUfEQUIC50?si=j07LfHi86uOz0Y75">
-</iframe> 
+</iframe>  -->
 
 
     <div class="gallery">
@@ -108,7 +109,7 @@ import  axios  from 'axios';
 import StarRating from 'vue-star-rating'
 // import { defineEmits } from 'vue';
 export default {
-  props:["ispop","popsrc"],
+  // props:["popvalue","popsrc"],
   data() {
     return {  
       name :'xxxx',
@@ -143,6 +144,7 @@ export default {
     };
   },
   created(){
+    // console.log(this.popvalue+"sssssss");
 axios.get('http://pm2.derive.co.th/tourism/api/touristSites/1').then((response) =>{
   console.log(response.data[0].imagesOfTouristSite);
   console.log(response.data[0].description);
@@ -175,6 +177,12 @@ imgpopimgweb(src){
   this.$emit('popupcityweb',src);
 console.log("../assets/img/1pm.jpg");
 },
+imgpopimgwebx(src,video){
+  // this.$emit('popupcityweb',src);
+  this.$emit('popupcitywebx',src,video);
+  console.log("sssssss");
+// console.log("../assets/img/1pm.jpg");
+},
 },
 
 }
@@ -198,7 +206,9 @@ console.log("../assets/img/1pm.jpg");
 } */
 
 
+/* .child{
 
+} */
 .text{
   text-align: left;
 }

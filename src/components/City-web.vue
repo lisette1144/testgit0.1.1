@@ -13,7 +13,7 @@
     <div class="leftandringtcityw">
   <div class="leftcolumncityw">
   <div class="cardcityw">
-      <Location @popupcityweb="popupwebz"></Location>
+      <Location style="font-size: 2px;" @popupcityweb="popupwebz" @popupcitywebx="popupwebzx" :popvalue ="popvalue"></Location>
     </div>
   </div>
   <div class="rightcolumncityw">
@@ -57,11 +57,21 @@
 </div>
 <div class="navbarcityw">
     <navbar></navbar></div>
-    <div class="navbarfixcityw"><Navtop></Navtop></div>
+    <div class="navbarfixcityw" v-bind="$attrs"><Navtop @inputs="updateParentValue"></Navtop></div>
 <!-- <Menu></Menu> -->
 <div id="myModal" class="modal1" v-if="isOpen">
   <span @click="closepop()" class="close">&times;</span>
-  <img class="modal-content" v-bind:src="imgsrcpop" >
+<div class="videopopd" v-if="typev=='video'">
+  <iframe @click="imgpopimgwebx()" width="80%" height="80%"
+src="https://www.youtube.com/embed/QhUfEQUIC50?si=j07LfHi86uOz0Y75">
+</iframe>
+</div>
+<div v-else>
+<img class="modal-content"  v-bind:src="imgsrcpop"
+  
+   >
+</div>
+  
   <div id="caption"></div>
 </div>
 </template>
@@ -72,11 +82,18 @@ import Location from '@/components/Location-web.vue';
 import Review from '@/components/Review-web.vue';
 import Navtop from '@/components/Nav-home.vue';
   export default {
+    mounted(){
+// console.log(Navtop);    
+},
     data(){
       return {isOpen: false,
         imgsrcpop:require("../assets/img/1pm.jpg"),
         imgsrc1:"",
-            imgsrc:''};
+            imgsrc:'',
+            popvalue:'',
+          typev:''
+          };
+            
     },
     //const:isOpen,
     // var: isOpen,
@@ -91,6 +108,9 @@ import Navtop from '@/components/Nav-home.vue';
   methods:{
     closepop(){
       this.isOpen= false;
+      if(this.typev=='video'){
+        this.typev="x"
+      }
     },
     popupwebz(src){
 
@@ -101,6 +121,25 @@ import Navtop from '@/components/Nav-home.vue';
       this.isOpen= true;
       // this.imgsrcpop=require(src)  
    
+    },
+    popupwebzx(src,video){
+
+// this.imgsrcpop ="'" + src + "'" ;
+console.log(video);
+console.log(src);
+this.isOpen= true;
+this.typev=video
+  // document.getElementById("imgsrcpop").src=this.imgsrcpop
+//   this.imgsrcpop=src
+// // imgsrc1=src;
+// this.isOpen= true;
+// this.imgsrcpop=require(src)  
+
+}
+    ,  updateParentValue(value) {
+      // Updating the parentValue when the 'input' event is emitted from the child
+      this.popvalue = value;
+      // console.log(value);
     }
   },
 }
@@ -111,7 +150,13 @@ import Navtop from '@/components/Nav-home.vue';
 * {
   box-sizing: border-box;
 }
-
+.Location .column.middle .text {
+  font-size: 2000px;
+}
+.videopopd{
+  
+height: 100%;
+}
 .navbarfixcityw{
   opacity: 0.9;
   /* overflow: hidden; */

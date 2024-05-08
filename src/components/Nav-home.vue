@@ -42,6 +42,11 @@
             </button><div v-show="tranaudio">
               <div id="myDropdown" class="dropdown-content">
                 <input type="range" min="0" max="10" step="1" v-model="valueaudio"> Volume : {{valueaudio}}
+                
+                 <!-- <div class="valueaudios">
+                 <button @click="add()"> + </button>
+                 Volume : {{valueaudio}}
+                 <button @click="Reduce()">-</button></div> -->
               </div>
             </div>
 
@@ -58,7 +63,10 @@
 
             <div v-show="transound">
               <div id="myDropdown" class="dropdown-content">
-                <input type="range" min="0" max="10" step="1" v-model="valuesize"> Font Size : {{valuesize}}              
+                <div class="valueaudios">
+                <button @click="Reduce()">-</button>
+                Font Size : {{valuesize}} <button @click="add()"> + </button>
+                 </div>              
                </div>
             </div>
             <!-- <div id="google_translate_element"></div> -->
@@ -110,6 +118,20 @@ export default {
     },
   },
   methods: {
+    add(){
+      if(this.valuesize<10){
+        this.valuesize=this.valuesize+1
+        this.$emit('inputs', this.valuesize);
+      }
+      
+    },
+    Reduce(){
+      if(this.valuesize>0){
+          this.valuesize=this.valuesize-1
+          this.$emit('inputs', this.valuesize);
+      }
+    
+    },
     openTran() {
       // window.googleTranslateElementInit()
       // document.getElementById("myDropdown").classList.toggle("show");
@@ -165,6 +187,8 @@ export default {
 body {
   margin: 0;
 }
+.valueaudios{
+padding: 10%;}
 .iconleft .ul2 {
   font-size: 10px;
 }
